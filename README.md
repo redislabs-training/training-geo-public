@@ -1,4 +1,4 @@
-# Training - 'Geolocation-aware applications with Redis'
+# Geolocation-Aware Applications with Redis
 
 This repository provides some exercises around the Redis Geo datatype.
 
