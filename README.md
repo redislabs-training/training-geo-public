@@ -32,3 +32,37 @@
 
 ## Understand the source code
 
+1. Open the file ‘app.py’ with an editor of your choice!
+2. Read and understand the source code!
+   1. The file is just 125 lines of code long.
+
+
+## Implementation tasks
+
+The idea of this exercise is to complete 5 simple implementation tasks. The surrounding source code is given, which should allow you to focus on the Redis commands. Each task is marked within the source code (e.g., `# Task 1 … <Your code here!>`.
+
+### Task 1 - Scan for a city with a specific name prefix
+
+1. You will need to identify the relevant index within the database. Indexes are prefixed with ‘idx’.
+2. Please assign the result of the command to the variable ‘rs’! This variable should have the type of an ‘iterator’. The Redis-side cursor-based iteration is already implemented by the client library.
+
+### Task 2 - Retrieve the country of the city
+
+1. The country should be retrieved as a Python string value, and it should be assigned to the variable with the name ‘country’.
+2. You can verify if Task 1 and Task 2 returned a valid result by looking at the debug output: `DEBUG: id = {}, city = {}, country = {}`
+
+### Task 3 - Retrieve the coordinates of the city
+
+1. You will need to identify the index within the database, which holds the geo-coordinates of cities.
+2. The result of the command should be assigned to the variable ‘pos’
+
+### Task 4 - Find max. 10 close-by breweries
+
+1. The previously fetched city coordinates can be leveraged for finding close-by breweries.
+2. You will also need to use the distance variable (dist), which was passed over as a request parameter. The distance is considered to be in miles.
+3. Please construct your command in a way that ...
+    1. you are NOT fetching the exact distance of resulting brewery.
+    2. you are fetching the coordinates of a resulting brewery.
+    3. a maximum of 10 breweries are returned (it might be otherwise hard to  draw more than 10 on a map).
+4. The result-set should be assigned to the variable ‘brewcoords’.
+
