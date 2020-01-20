@@ -50,5 +50,3 @@ with open("data/breweries.csv", 'r') as breweries:
             redis.geoadd("idx:breweries", lng, lat, id)
 
 print("Import of {} records completed.".format(count))
-
-# Verify
