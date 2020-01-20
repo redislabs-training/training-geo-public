@@ -7,7 +7,7 @@ This repository provides some exercises around Redis commands that related to ge
 This repository is just sharing the exercises of the 'Geolocation-Aware Applications with Redis' training. The learning objectives of the entire training are:
 
 * Know how Geo-aware solutions are used and which problems are addressed by them
-* Understand and present the technology basics
+* Understand and be able to present the technology basics
 * Understand the technical details of the Redis Geo* commands and their approach to support geo-spatial use cases
 * Understand the data modeling basics
 * Get insights how geo-spatial solutions are implemented with traditional vendors
