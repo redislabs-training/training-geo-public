@@ -83,19 +83,19 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 * The application listens on port 5000, so you will be able to reach it via http://localhost:5000
 * It’s expected to see the following:
 
-<img src="images/geoapp-init.png" width="300px"/>
+<img src="images/geoapp-init.png" width="500px"/>
 
 * Click on the link ‘Test DB Connectivity’. The expected result is:
 
-<img src="images/geoapp-test.png" width="300px"/>
+<img src="images/geoapp-test.png" width="500px"/>
 
 * Click on the link ‘Home’ to return to the start page again!
 * Fill the form in with the following details and then press the ‘Submit’ button:
    * City: New York
    * Distance: 50 miles
    
-<img src="images/geoapp-search.png" width="300px"/>
+<img src="images/geoapp-search.png" width="500px"/>
  
 * Congrats! You completed the implementation exercise successfully if you are seeing the following output:
 
-<img src="images/geoapp-nyc-50m.png" width="300px"/>
+<img src="images/geoapp-nyc-50m.png" width="500px"/>
