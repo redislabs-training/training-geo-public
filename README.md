@@ -41,7 +41,7 @@ This repository provides some exercises around the Redis Geo datatype.
 
 ## Implementation tasks
 
-The idea of this exercise is to complete 5 simple implementation tasks. The surrounding source code is given, which should allow you to focus on the Redis commands. Each task is marked within the source code (e.g., `# Task 1 … <Your code here!>`.
+The idea of this exercise is to complete 5 simple implementation tasks. The surrounding source code is given, which should allow you to focus on the Redis commands. Each task is marked within the source code (e.g., `# Task 1 … <Your code here!>`).
 
 ### Task 1 - Scan for a city with a specific name prefix
 
