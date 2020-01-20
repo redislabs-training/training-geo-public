@@ -1,4 +1,6 @@
-# Training Geolocation-aware applications with Redis
+# Training - 'Geolocation-aware applications with Redis'
+
+This repository provides some exercises around the Redis Geo datatype.
 
 ## Preparations
 
@@ -66,3 +68,26 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
     3. a maximum of 10 breweries are returned (it might be otherwise hard to  draw more than 10 on a map).
 4. The result-set should be assigned to the variable ‘brewcoords’.
 
+### Task 5 - Retrieve brewery details
+
+1. The details which we retrieved in step 4 are limited to the data which was stored within the index. Please retrieve the following additional brewery details from the database!
+    1. Name
+    2. City
+2. The result of the command is a dictionary that has the properties ‘name’ and ‘city’. The variable name for this dictionary should be ‘b’.
+3. You can verify if Task 3 to 5 were completed successfully by taking a look at the debug output: `DEBUG: breweries = {}`
+
+## Test the application
+
+1. Change the directory to the source code directory ‘geo-app’!
+2. Run the command  python app.py
+3. The application listens on port 5000, so you will be able to reach it via http://localhost:5000
+4. It’s expected to see the following:
+    <img src="" width="300px"/>
+5. Click on the link ‘Test DB Connectivity’. The expected result is:
+    <img src="" width="300px"/>
+6. Click on the link ‘Home’ to return to the start page again!
+7. Fill the form in with the following details and then press the ‘Submit’ button:
+    1. City: New York
+    2. Distance: 50 miles
+8. Congrats! You completed the implementation exercise successfully if you are seeing the following output:
+    <img src="" width="300px"/>
