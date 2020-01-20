@@ -83,7 +83,7 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 * The application listens on port 5000, so you will be able to reach it via http://localhost:5000
 * It’s expected to see the following:
 
-<img src="" width="300px"/>
+<img src="images/geoapp-init.png" width="300px"/>
 
 * Click on the link ‘Test DB Connectivity’. The expected result is:
 
