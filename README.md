@@ -1,6 +1,6 @@
 # Geolocation-Aware Applications with Redis
 
-This repository provides some exercises around Redis commands that related to geospatial indexing & search.
+This repository provides some exercises around Redis commands that are related to geospatial search.
 
 ## Learning Objectives
 
