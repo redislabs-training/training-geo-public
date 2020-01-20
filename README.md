@@ -2,7 +2,7 @@
 
 This repository provides some exercises around the Redis Geo datatype.
 
-## Preparations
+## Step -Preparations
 
 1. Ensure that your computer is connected to the internet as your computer will need to access some external resources (e.g., CCS files & JavaScript UI libraries)
 2. Prepare a Python 3.x development environment! The Python dependencies need to be installed:
@@ -79,7 +79,7 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 ## Test the application
 
 * Change the directory to the source code directory ‘geo-app’!
-* Run the command  python app.py
+* Run the command  `python app.py`
 * The application listens on port 5000, so you will be able to reach it via http://localhost:5000
 * It’s expected to see the following:
 
@@ -87,12 +87,15 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 
 * Click on the link ‘Test DB Connectivity’. The expected result is:
 
-<img src="" width="300px"/>
+<img src="images/geoapp-test.png" width="300px"/>
 
 * Click on the link ‘Home’ to return to the start page again!
 * Fill the form in with the following details and then press the ‘Submit’ button:
    * City: New York
    * Distance: 50 miles
+   
+<img src="images/geoapp-search.png" width="300px"/>
+ 
 * Congrats! You completed the implementation exercise successfully if you are seeing the following output:
 
-<img src="" width="300px"/>
+<img src="images/geoapp-nyc-50m.png" width="300px"/>
