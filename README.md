@@ -78,16 +78,21 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 
 ## Test the application
 
-1. Change the directory to the source code directory ‘geo-app’!
-2. Run the command  python app.py
-3. The application listens on port 5000, so you will be able to reach it via http://localhost:5000
-4. It’s expected to see the following:
-    <img src="" width="300px"/>
-5. Click on the link ‘Test DB Connectivity’. The expected result is:
-    <img src="" width="300px"/>
-6. Click on the link ‘Home’ to return to the start page again!
-7. Fill the form in with the following details and then press the ‘Submit’ button:
-    1. City: New York
-    2. Distance: 50 miles
-8. Congrats! You completed the implementation exercise successfully if you are seeing the following output:
-    <img src="" width="300px"/>
+* Change the directory to the source code directory ‘geo-app’!
+* Run the command  python app.py
+* The application listens on port 5000, so you will be able to reach it via http://localhost:5000
+* It’s expected to see the following:
+
+<img src="" width="300px"/>
+
+* Click on the link ‘Test DB Connectivity’. The expected result is:
+
+<img src="" width="300px"/>
+
+* Click on the link ‘Home’ to return to the start page again!
+* Fill the form in with the following details and then press the ‘Submit’ button:
+   * City: New York
+   * Distance: 50 miles
+* Congrats! You completed the implementation exercise successfully if you are seeing the following output:
+
+<img src="" width="300px"/>
