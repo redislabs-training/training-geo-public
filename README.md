@@ -37,7 +37,7 @@ This repository is just sharing the exercises of the 'Geolocation-Aware Applicat
 
 ## Data import
 
-1. Change the directory to the source code directory ‘geo-app’!
+1. Change the directory to the source code directory ‘geoapp’!
 2. Take a look at the Python script ‘importer.py’!
 3. Run the Python script ‘importer.py’ via `python importer.py`!
 4. Wait until the import completes. The importer shows the message ‘Import of 16790 records completed’.
@@ -89,7 +89,7 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 
 ## Test the application
 
-* Change the directory to the source code directory ‘geo-app’!
+* Change the directory to the source code directory ‘geoapp’!
 * Run the command  `python app.py`
 * The application listens on port 5000, so you will be able to reach it via http://localhost:5000
 * It’s expected to see the following:
