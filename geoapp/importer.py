@@ -27,7 +27,7 @@ with open("data/worldcities.csv", 'r') as cities:
         count += 1
 
         redis.hmset("ct:{}".format(id), { "_id" : id, "name" : name, "country" : country, "population" : pop })
-        redis.geoadd("idx:cities", lng, lat, id)
+        redis.geoadd("idx:cities", [lng, lat, id])
         redis.hset("idx:city_by_name", name, id)
 
 # Import Breweries
@@ -47,6 +47,6 @@ with open("data/breweries.csv", 'r') as breweries:
             key = "brw:{}".format(id)
 
             redis.hmset(key, { "_id" : id, "name" : name, "city" : city })
-            redis.geoadd("idx:breweries", lng, lat, id)
+            redis.geoadd("idx:breweries", [lng, lat, id])
 
 print("Import of {} records completed.".format(count))
