@@ -21,7 +21,8 @@ This repository is just sharing the exercises of the 'Geolocation-Aware Applicat
    2. Redis
       ```
       cd geoapp
-      python3 -m venv geoappvenv
+      pip install virtualenv
+      virtualenv --python=python3 geoappvenv
       source geoappvenv/bin/activate
       pip install -r requirements.txt
       python --version
