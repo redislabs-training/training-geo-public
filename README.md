@@ -21,12 +21,12 @@ This repository is just sharing the exercises of the 'Geolocation-Aware Applicat
    2. Redis
       ```
       cd geoapp
-      virtualenv --python=python3 geoappvenv
+      python3 -m venv geoappvenv
       source geoappvenv/bin/activate
       pip install -r requirements.txt
       python --version
       ```
-3. Please install Redis 5.x OSS locally!
+3. Please install Redis 6 OSS locally!
    1. No additional Redis module is required for this exercise.
 4. Clone the following code repository locally: https://github.com/redislabs-training/training-geo-public ! 
    1. This results in a local working copy of the source code.
@@ -74,9 +74,9 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 1. The previously fetched city coordinates can be leveraged for finding close-by breweries.
 2. You will also need to use the distance variable (dist), which was passed over as a request parameter. The distance is considered to be in miles.
 3. Please construct your command in a way that ...
-    1. you are NOT fetching the exact distance of resulting brewery.
-    2. you are fetching the coordinates of a resulting brewery.
-    3. a maximum of 10 breweries are returned (it might be otherwise hard to  draw more than 10 on a map).
+    1. You are NOT fetching the exact distance of resulting brewery.
+    2. You are fetching the coordinates of a resulting brewery.
+    3. A maximum of 10 breweries are returned (it might be otherwise hard to draw more than 10 on a map).
 4. The result-set should be assigned to the variable ‘brewcoords’.
 
 ### Task 5 - Retrieve brewery details
@@ -91,7 +91,7 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 
 * Change the directory to the source code directory ‘geoapp’!
 * Run the command  `python app.py`
-* The application listens on port 5000, so you will be able to reach it via http://localhost:5000
+* The application listens on port 5000, so you will be able to reach it via http://localhost:5500
 * It’s expected to see the following:
 
 <img src="images/geoapp-init.png" width="500px"/>
