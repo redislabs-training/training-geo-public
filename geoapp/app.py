@@ -52,7 +52,8 @@ def index():
 			## Variable name: rs
 
 			# <Your code here!>
-		
+			
+
 			# Take the first city
 			## BTW: This might cause some unexpected results (e.g., London in the USA doesn't have breweries in the database)
 			r = next(rs)
@@ -61,6 +62,7 @@ def index():
 
 			# Task 2 - Retrieve the country of the city
 			## Variable name: country
+			country = redis.hget("ct:{}".format(id), "country")
 
 			# <Your code here!>
 			
@@ -70,7 +72,7 @@ def index():
 			## Variable name: pos
 
 			# <Your code here!>
-			
+			pos = redis.geopos("idx:cities", id)
 
 			# Task 4 - Find max. 10 close-by breweries
 			## Don't fetch the distance, but the id of the brewery and the coordinates only!
@@ -79,6 +81,8 @@ def index():
 			lat = pos[0][1]
 			
 			# <Your code here!>
+			brewcoords = redis.georadius("idx:breweries", lng, lat, int(dist), "mi", False, True, False, 10)
+			print("DEBUG: coordinates = {}".format(brewcoords))
 		
 			print("DEBUG: coordinates = {}".format(brewcoords))
 
@@ -94,7 +98,6 @@ def index():
 				
 				# <Your code here!>
 
-				breweries.append({ "name" : b["name"], "city" : b["city"], "lng" : blng, "lat" : blat})
 
 				print("DEBUG: breweries = {}".format(breweries))			
 
@@ -131,4 +134,4 @@ def root():
 # Main    
 if __name__ == "__main__":
 	app.debug = False
-	app.run(host="0.0.0.0", port=5000)
+	app.run(host="0.0.0.0", port=5500)
