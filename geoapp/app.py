@@ -103,6 +103,7 @@ def index():
 		
 		except:
 			# No sophisticated error handling here
+			print(sys.exc_info())
 			err = "Ooops! Did you search for a valid city?"
 			return render_template('home.html', title=TITLE, desc=DESC, error=err)
 	else:
