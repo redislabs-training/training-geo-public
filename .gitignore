@@ -138,3 +138,6 @@ dmypy.json
 cython_debug/
 
 geoappvenv
+.DS_Store
+dump.rdb
+.idea
