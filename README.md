@@ -92,7 +92,7 @@ The idea of this exercise is to complete 5 simple implementation tasks. The surr
 
 * Change the directory to the source code directory ‘geoapp’!
 * Run the command  `python app.py`
-* The application listens on port 5000, so you will be able to reach it via http://localhost:5500
+* The application listens on port 5500, so you will be able to reach it via http://localhost:5500
 * It’s expected to see the following:
 
 <img src="images/geoapp-init.png" width="500px"/>
