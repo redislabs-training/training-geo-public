@@ -16,24 +16,20 @@ This repository is just sharing the exercises of the 'Geolocation-Aware Applicat
 ## Step -Preparations
 
 1. Ensure that your computer is connected to the internet as your computer will need to access some external resources (e.g., CCS files & JavaScript UI libraries)
-2. Prepare a Python 3.x development environment! The Python dependencies need to be installed:
-   1. Flask
-   2. Redis
-      ```
-      cd geoapp
-      pip install virtualenv
-      virtualenv --python=python3 geoappvenv
-      source geoappvenv/bin/activate
-      pip install -r requirements.txt
-      python --version
-      ```
-3. Please install Redis 6 OSS locally!
-   1. No additional Redis module is required for this exercise.
-4. Clone the following code repository locally: https://github.com/redislabs-training/training-geo-public ! 
+2. You will need access to a Redis database (Use Redis Cloud, install Redis Community Edition or run it locally via docker)
+3. Clone the following code repository locally: https://github.com/redislabs-training/training-geo-public ! 
    1. This results in a local working copy of the source code.
    2. Please don’t publish the source code (e.g., by forking and pushing to a public Git repo)!
+4. Prepare a Python 3.x development environment! 
+      ```
+      cd geoapp
+      python3 -m venv geoappvenv
+      source geoappvenv/bin/activate
+      python3 -m pip install -r requirements.txt
+      python --version
+      ```
 5. Configure the application to use your Redis database via the file ‘config.py’!
-   1. The default configuration uses port 6379.
+   1. The default configuration uses localhost and port 6379.
 6. Verify the database connectivity!
 
 ## Data import
