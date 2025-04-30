@@ -23,9 +23,12 @@ This repository provides some exercises around Redis commands that are related t
 ## Verify Setup
 
 1. Change the directory to the source code directory ‘geoapp’!
-1. Run the command  `python app.py`
-1. The application listens on port 5500, so you will be able to reach it via http://localhost:5500
-1. It’s expected to see the following:
+2. Run the command  `python app.py`
+3. The application listens on port 5500, so you will be able to reach it via http://localhost:5500
+4. It’s expected to see the following:
+
    <img src="images/geoapp-init.png" width="500px">
-1. Click on the link ‘Test DB Connectivity’. The expected result is:
+
+5. Click on the link ‘Test DB Connectivity’. The expected result is:
+
    <img src="images/geoapp-test.png" width="500px"/>
