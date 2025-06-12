@@ -6,7 +6,7 @@ from redis import Redis
 host = config.REDIS_CFG["host"]
 port = config.REDIS_CFG["port"]
 pwd = config.REDIS_CFG["password"]
-redis = Redis(host=host, port=port, password=pwd, charset="utf-8", decode_responses=True)
+redis = Redis(host=host, port=port, password=pwd, decode_responses=True)
 
 # Import Cities
 print("Importing ...")
